@@ -1,0 +1,254 @@
+Scrolling concept:
+Scroll/ScrollTo:
+-Specific position
+-Bottom of the page
+-To element location
+ScrollBy-It is used to current location webpage position
+ScrollIntoView-It will capture the position...wherw ever the element is like starting of the view and middle of the view 
+
+
+(0,1290)
+
+
+Frame work is design always step by step.
+
+PROPERTIES FILE CONCEPT:
+
+Properties Name is:config.properties-it does not write any java code-it will write the only properties
+properties like-url,username,pw,keys & values ,keys is the url and chrome is the value.
+
+how to read properties file:1)we have to create the object of class---
+1-properties prop =new properties();
+2-FileInputStream=new FileInputStream();--go to config.prop -and then go to properties-select the location link click to copy and paste it in fileinputstream.
+3-prop.load(ip);
+
+ex:selenium.properties,config.properties etc
+
+
+properties.object one method is -prop.load(ip);-ip is object reference
+prop.load means:it will load all the properties of file 
+
+config.properties:it will change any data here it is automatically change where ever the code .This is the main advantage of properties.
+ex:it will 100 times write the pw that time.first it will change the properties then automatically change the code in whatever.
+
+ex:2000 properties means 2000 Strings.
+
+ LOGS 4J CONCEPT:
+it is not a part of java,it is not a jdk,it is not a jvm,it is not a selenium......just we have to add a extra dependencies for that.--search in google -log4j maven.
+
+
+
+
+
+package tests;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class LoginTestCase {
+
+public static void main(String[] args) {
+System.setProperty("webdriver.chrome.driver", "Chrome exe path");
+WebDriver driver = new ChromeDriver();
+driver.manage().window().maximize();
+
+driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+//Code to find element using id and send values in text field.
+WebElement email = driver.findElement(By.id("email"));
+WebElement password = driver.findElement(By.id("pass"));
+WebElement login = driver.findElement(By.id("u_0_i"));
+
+//code to send keys to edit box
+email.sendKeys("Rahul Shetty");
+password.sendKeys("1234567");
+
+//code to clear edit box.
+email.clear();
+password.clear();
+
+//code to send keys to edit box and click on login button.
+email.sendKeys("rahul shetty");
+password.sendKeys("0987654321");
+
+//code to press login button using submit()
+login.submit();
+
+//Close chrome driver
+driver.close();
+     }
+}
+
+Summary
+
+
+
+Scrolling concept:
+Scroll/ScrollTo:
+-Specific position
+-Bottom of the page
+-To element location
+ScrollBy-It is used to current location webpage position
+ScrollIntoView-It will capture the position...wherw ever the element is like starting of the view and middle of the view 
+
+
+(0,1290)
+
+
+Frame work is design always step by step.
+
+PROPERTIES FILE CONCEPT:
+
+Properties Name is:config.properties-it does not write any java code-it will write the only properties
+properties like-url,username,pw,keys & values ,keys is the url and chrome is the value.
+
+how to read properties file:1)we have to create the object of class---
+1-properties prop =new properties();
+2-FileInputStream=new FileInputStream();--go to config.prop -and then go to properties-select the location link click to copy and paste it in fileinputstream.
+3-prop.load(ip);
+
+ex:selenium.properties,config.properties etc
+
+
+properties.object one method is -prop.load(ip);-ip is object reference
+prop.load means:it will load all the properties of file 
+
+config.properties:it will change any data here it is automatically change where ever the code .This is the main advantage of properties.
+ex:it will 100 times write the pw that time.first it will change the properties then automatically change the code in whatever.
+
+ex:2000 properties means 2000 Strings.
+
+ LOGS 4J CONCEPT:
+it is not a part of java,it is not a jdk,it is not a jvm,it is not a selenium......just we have to add a extra dependencies for that.--search in google -log4j maven.
+
+
+
+
+
+package tests;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class LoginTestCase {
+
+public static void main(String[] args) {
+System.setProperty("webdriver.chrome.driver", "Chrome exe path");
+WebDriver driver = new ChromeDriver();
+driver.manage().window().maximize();
+
+driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+//Code to find element using id and send values in text field.
+WebElement email = driver.findElement(By.id("email"));
+WebElement password = driver.findElement(By.id("pass"));
+WebElement login = driver.findElement(By.id("u_0_i"));
+
+//code to send keys to edit box
+email.sendKeys("Rahul Shetty");
+password.sendKeys("1234567");
+
+//code to clear edit box.
+email.clear();
+password.clear();
+
+//code to send keys to edit box and click on login button.
+email.sendKeys("rahul shetty");
+password.sendKeys("0987654321");
+
+//code to press login button using submit()
+login.submit();
+
+//Close chrome driver
+driver.close();
+     }
+}
+
+Summary
+
+
+Scrolling concept:
+Scroll/ScrollTo:
+-Specific position
+-Bottom of the page
+-To element location
+ScrollBy-It is used to current location webpage position
+ScrollIntoView-It will capture the position...wherw ever the element is like starting of the view and middle of the view 
+
+
+(0,1290)
+
+
+Frame work is design always step by step.
+
+PROPERTIES FILE CONCEPT:
+
+Properties Name is:config.properties-it does not write any java code-it will write the only properties
+properties like-url,username,pw,keys & values ,keys is the url and chrome is the value.
+
+how to read properties file:1)we have to create the object of class---
+1-properties prop =new properties();
+2-FileInputStream=new FileInputStream();--go to config.prop -and then go to properties-select the location link click to copy and paste it in fileinputstream.
+3-prop.load(ip);
+
+ex:selenium.properties,config.properties etc
+
+
+properties.object one method is -prop.load(ip);-ip is object reference
+prop.load means:it will load all the properties of file 
+
+config.properties:it will change any data here it is automatically change where ever the code .This is the main advantage of properties.
+ex:it will 100 times write the pw that time.first it will change the properties then automatically change the code in whatever.
+
+ex:2000 properties means 2000 Strings.
+
+ LOGS 4J CONCEPT:
+it is not a part of java,it is not a jdk,it is not a jvm,it is not a selenium......just we have to add a extra dependencies for that.--search in google -log4j maven.
+
+
+
+
+
+package tests;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class LoginTestCase {
+
+public static void main(String[] args) {
+System.setProperty("webdriver.chrome.driver", "Chrome exe path");
+WebDriver driver = new ChromeDriver();
+driver.manage().window().maximize();
+
+driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+//Code to find element using id and send values in text field.
+WebElement email = driver.findElement(By.id("email"));
+WebElement password = driver.findElement(By.id("pass"));
+WebElement login = driver.findElement(By.id("u_0_i"));
+
+//code to send keys to edit box
+email.sendKeys("Rahul Shetty");
+password.sendKeys("1234567");
+
+//code to clear edit box.
+email.clear();
+password.clear();
+
+//code to send keys to edit box and click on login button.
+email.sendKeys("rahul shetty");
+password.sendKeys("0987654321");
+
+//code to press login button using submit()
+login.submit();
+
+//Close chrome driver
+driver.close();
+     }
+}
+
+Summary
